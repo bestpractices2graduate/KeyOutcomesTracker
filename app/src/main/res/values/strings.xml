@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Key Outcomes Tracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="contact_us_navigation_drawer">Contact Us</string>
+    <string name="rate_this_app_navigation_drawer">Rate This App</string>
+    <string name="share_this_app_navigation_drawer">Share</string>
+    <string name="send_to">Select one</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Statistics Are Fun!</string>
+    <string name="slide_1_desc">Track and Measure Outcomes</string>
+
+    <string name="slide_2_title">Falling Behind Sucks!</string>
+    <string name="slide_2_desc">Reduce Procrastination</string>
+
+    <string name="slide_3_title">Get Pumped!</string>
+    <string name="slide_3_desc">Develop Motivation</string>
+
+    <string name="slide_4_title">Study or Party?!</string>
+    <string name="slide_4_desc">Align Social Environment</string>
+
+    <string name="slide_5_title">Rewards!</string>
+    <string name="slide_5_desc">Establish Reward System</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="bullet_point">•</string>
+    <string name="instructorsTAs">Instructors &amp; TAs</string>
+
+</resources>

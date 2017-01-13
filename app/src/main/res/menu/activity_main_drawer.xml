@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/navigation_drawer_group_0"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:orderInCategory="100"
+            android:title="Home" />
+        <item
+            android:id="@+id/student_profile"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:orderInCategory="200"
+            android:title="Student Profile" />
+        <item
+            android:id="@+id/instructor_profile"
+            android:icon="@drawable/ic_instructor_ta_black_24dp"
+            android:orderInCategory="300"
+            android:title="@string/instructorsTAs" />
+        <item
+            android:id="@+id/courses"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:orderInCategory="400"
+            android:title="Courses" />
+        <item
+            android:id="@+id/study_sessions"
+            android:icon="@drawable/ic_menu_gallery"
+            android:orderInCategory="500"
+            android:title="Study Sessions" />
+
+        <item
+            android:id="@+id/track_key_outcomes"
+            android:icon="@drawable/ic_clock_black_24dp"
+            android:orderInCategory="600"
+            android:title="Track Key Outcomes" />
+
+        <item
+            android:id="@+id/additional_resources"
+            android:icon="@drawable/ic_additional_resources_black_24dp"
+            android:orderInCategory="700"
+            android:title="Additional Resources" />
+    </group>
+
+    <group
+        android:id="@+id/navigation_drawer_group_1"
+        android:checkableBehavior="none">
+
+        <!--<item android:title="Communicate">-->
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:orderInCategory="800"
+            android:title="@string/contact_us_navigation_drawer" />
+
+        <item
+            android:id="@+id/rate_this_app"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:orderInCategory="900"
+            android:title="@string/rate_this_app_navigation_drawer" />
+
+        <item
+            android:id="@+id/share_app"
+            android:icon="@drawable/ic_menu_share"
+            android:orderInCategory="1000"
+            android:title="@string/share_this_app_navigation_drawer" />
+
+    </group>
+
+    <group
+        android:id="@+id/navigation_drawer_group_2"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:orderInCategory="1100"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/about_app"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:orderInCategory="1200"
+            android:title="About" />
+    </group>
+</menu>

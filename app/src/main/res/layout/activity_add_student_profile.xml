@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentStudentProfileRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="bestpractices.keyoutcomestracker.activities.ActivityMain">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/gridLayout0"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+            <GridLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_corners_cards"
+                android:columnCount="4">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_margin="4dp"
+                    android:layout_row="0"
+                    android:textStyle="bold"
+                    android:text="Profile Picture"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <ImageButton
+                    android:id="@+id/takeProfilePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_row="1"
+                    android:src="@drawable/ic_camera_alt_white_24dp" />
+
+            </GridLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/gridLayout1"
+                android:layout_below="@+id/gridLayout0"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:columnCount="4">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_margin="4dp"
+                    android:layout_row="0"
+                    android:textStyle="bold"
+                    android:text="Private Fields"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/firstNameTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="10dp"
+                    android:layout_row="1"
+                    android:hint="First Name"
+                    android:longClickable="false">
+
+                    <EditText
+                        android:id="@+id/firstNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:longClickable="false"
+                        android:maxLength="40"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lastNameTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_margin="10dp"
+                    android:layout_row="2"
+                    android:hint="Last Name"
+                    android:longClickable="false">
+
+                    <EditText
+                        android:id="@+id/lastNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:longClickable="false"
+                        android:maxLength="40"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+            </GridLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/gridLayout2"
+                android:layout_below="@+id/gridLayout1"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_corners_cards"
+                android:columnCount="4">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_margin="4dp"
+                    android:layout_row="0"
+                    android:textStyle="bold"
+                    android:text="School Fields"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/studentIDTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_margin="10dp"
+                    android:layout_row="1"
+                    android:hint="Student ID"
+                    android:longClickable="false">
+
+                    <EditText
+                        android:id="@+id/studentIDEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_row="2"
+                    android:text="Semester"
+                    />
+
+                <Spinner
+                    android:id="@+id/semesterSpinnerOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_row="3"
+                    android:focusableInTouchMode="false"
+                    android:spinnerMode="dropdown">
+                </Spinner>
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@+id/semesterTextInputLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_column="0"-->
+                    <!--android:layout_columnSpan="4"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_row="2"-->
+                    <!--android:hint="Semester"-->
+                    <!--android:longClickable="false">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/semesterEditText"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_column="0"-->
+                        <!--android:imeOptions="actionNext"-->
+                        <!--android:inputType="textCapWords"-->
+                        <!--android:longClickable="false"-->
+                        <!--android:maxLength="15"-->
+                        <!--android:maxLines="1" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Classes"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_row="4"
+                    />
+
+                <Spinner
+                    android:id="@+id/numberOfClassesSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_row="5"
+                    android:focusableInTouchMode="false"
+                    android:spinnerMode="dropdown">
+                </Spinner>
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@+id/numberOfClassesTextInputLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_column="0"-->
+                    <!--android:layout_columnSpan="4"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:layout_row="3"-->
+                    <!--android:hint="Number of Classes"-->
+                    <!--android:longClickable="false">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/numberOfClassesEditText"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:imeOptions="actionNext"-->
+                        <!--android:inputType="number"-->
+                        <!--android:longClickable="false"-->
+                        <!--android:maxLength="2"-->
+                        <!--android:maxLines="1" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/schoolNameTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="4"
+                    android:layout_margin="10dp"
+                    android:layout_row="6"
+                    android:hint="School Name"
+                    android:longClickable="false">
+
+
+                    <EditText
+                        android:id="@+id/schoolNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapWords"
+                        android:longClickable="false"
+                        android:maxLength="40"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+            </GridLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/saveStudentProfileFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_check_white_24dp" />
+</RelativeLayout>

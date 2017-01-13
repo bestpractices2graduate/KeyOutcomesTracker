@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bestpractices.keyoutcomestracker">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Intro Slider -->
+        <activity
+            android:name=".activities.ActivityWelcomeIntroSlider"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity Main -->
+        <activity
+            android:name=".activities.ActivityMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Add Student Profile -->
+        <activity
+            android:name=".activities.ActivityAddStudentProfile"
+            android:label="Add Student Profile"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityMain"
+            android:screenOrientation="portrait" />
+
+        <!-- Add Instructor Profile -->
+        <activity
+            android:name=".activities.ActivityAddInstructorProfile"
+            android:label="Add Instructor"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityAddStudentProfile"
+            android:screenOrientation="portrait" />
+
+        <!-- Add Teaching Assistant Profile -->
+        <activity
+            android:name=".activities.ActivityAddTeachingAssistantProfile"
+            android:label="Add Teaching Assistant"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityMain"
+            android:screenOrientation="portrait" />
+
+        <!-- Add Courses -->
+        <activity
+            android:name=".activities.ActivityAddCourses"
+            android:label="Add Course"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityAddInstructorProfile"
+            android:screenOrientation="portrait" />
+
+        <!-- My Profile -->
+        <activity
+            android:name=".activities.ActivityMyProfile"
+            android:label="My Profile"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Student Profile -->
+        <activity
+            android:name=".activities.ActivityStudentProfile"
+            android:label="Student Profile"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityMain"
+            android:screenOrientation="portrait" />
+
+        <!-- Add Class Assignments -->
+        <activity
+            android:name=".activities.ActivityAddClassAssignments"
+            android:screenOrientation="portrait" />
+
+        <!-- Instructor/TA profile -->
+        <activity
+            android:name=".activities.ActivityInstructorTAProfile"
+            android:label="@string/instructorsTAs"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Courses -->
+        <activity
+            android:name=".activities.ActivityCourses"
+            android:label="Courses"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ActivityMain"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
